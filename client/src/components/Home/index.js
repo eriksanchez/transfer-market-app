@@ -1,7 +1,15 @@
 import React from "react";
 
-const Home = () => {
-  return <div> This is the home page.</div>;
+import { Button } from "reactstrap";
+
+const Home = (props) => {
+  return (
+    <div>
+      <Button outline color="danger">
+        Primary
+      </Button>
+    </div>
+  );
 };
 
 export default Home;
