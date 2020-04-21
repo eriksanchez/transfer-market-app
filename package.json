@@ -4,6 +4,7 @@
   "description": "Transfer Market Agent built with MERN stack",
   "main": "server.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js"
   },

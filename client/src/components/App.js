@@ -1,18 +1,21 @@
 import React from "react";
 
+import NavBar from "./NavBar";
 import Routers from "./Routers";
 
-//Test
-import Example from "./Home/Example";
+//Testing
+import PlayerList from "./PlayerList/index";
+
 const App = () => {
   return (
     <div>
       <img
-        src={process.env.PUBLIC_URL + "/Transfermarkt_Logo.png"}
+        src={process.env.PUBLIC_URL + "/images/Transfermarkt_Logo.png"}
         alt="logo"
+        style={{ height: 150, width: 300 }}
       />
-      <Example />
-      <Routers />
+      <NavBar />
+      <PlayerList />
     </div>
   );
 };
