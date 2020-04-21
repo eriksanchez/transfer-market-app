@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 import Routers from "./Routers";
 
 //Testing
-import PlayerList from "./PlayerList/index";
+//import PlayerList from "./PlayerList/index";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         style={{ height: 150, width: 300 }}
       />
       <NavBar />
-      <PlayerList />
+      <Routers />
     </div>
   );
 };

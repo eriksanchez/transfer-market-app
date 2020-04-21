@@ -47,6 +47,7 @@ const PlayerList = () => {
           ))}
         </TransitionGroup>
       </ListGroup>
+
       <ListGroup></ListGroup>
       <Button>Another one</Button>
     </Container>

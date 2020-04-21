@@ -22,8 +22,8 @@ const NavBar = (props) => {
         <Container>
           <NavbarBrand href="/">News</NavbarBrand>
           <NavbarBrand>Competitions</NavbarBrand>
-          <NavbarBrand>Login</NavbarBrand>
-          <NavbarBrand visable="false">My Player List</NavbarBrand>
+          <NavbarBrand href="/Login">Login</NavbarBrand>
+
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>

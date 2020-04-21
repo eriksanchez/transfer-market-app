@@ -1,9 +1,15 @@
 import React from "react";
 
+import NewsCon from "./NewsCon";
+
 import { Button } from "reactstrap";
 
 const Home = (props) => {
-  return <div>I am a Home Page</div>;
+  return (
+    <div>
+      <NewsCon />
+    </div>
+  );
 };
 
 export default Home;
