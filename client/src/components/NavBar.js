@@ -12,7 +12,6 @@ import {
 
 const NavBar = (props) => {
   const [isOpen, setOpen] = useState(false);
-  const [isLoggedIn, setLogIn] = useState(false);
 
   const toggle = () => setOpen(!isOpen);
 
