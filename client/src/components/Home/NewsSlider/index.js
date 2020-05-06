@@ -12,7 +12,13 @@ const slides = [
     image:
       "https://img.bleacherreport.net/img/images/photos/003/848/415/hi-res-721f6cc92cc4dd87fb17cc3476e04a6a_crop_north.jpg?1579614823&w=3072&h=2048",
   },
-  { title: "Second Item", description: "This is the second item" },
+  {
+    title:
+      "Carlos Vela, starting off another season in the MLS with a wonder goal!",
+    description:
+      "Carlos Vela, coming off a history season in the 2019 campaign, shows no stop of slowing down for the 2020 season. With 35 goals in 30 goals, Carlos Vela comes into the new season with no signs of form loss.",
+    image: "https://goolfm.net/wp-content/uploads/2020/03/Carlos-Vela.jpg",
+  },
 ];
 
 const NewsSlider = () => {
@@ -28,8 +34,8 @@ const NewsSlider = () => {
             }}
             onClick={() => history.push("/login")}
           >
-            <h2>{slide.title}</h2>
-            <div>{slide.description}</div>
+            <h2 style={{ color: "white" }}>{slide.title}</h2>
+            <div style={{ color: "white" }}>{slide.description}</div>
           </div>
         ))}
       </Slider>
