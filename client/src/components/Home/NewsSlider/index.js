@@ -23,18 +23,24 @@ const slides = [
 
 const NewsSlider = () => {
   return (
-    <div>
+    <div
+      style={{
+        width: "60%",
+        marginLeft: "10px",
+      }}
+    >
       <Slider>
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="slider-content"
             style={{
               background: `url('${slide.image}') no-repeat center center`,
             }}
             onClick={() => history.push("/login")}
           >
-            <h2 style={{ color: "white" }}>{slide.title}</h2>
+            <div style={{ backgroundColor: "rgba(75,171,232)", float: "left" }}>
+              <h2 style={{ color: "white" }}>{slide.title}</h2>
+            </div>
             <div style={{ color: "white" }}>{slide.description}</div>
           </div>
         ))}

@@ -7,7 +7,7 @@ import NewsCon from "./NewsCon/index";
 const Home = () => {
   return (
     <div>
-      <div>
+      <div style={{ display: "flex " }}>
         <NewsSlider />
         <MSP />
       </div>
