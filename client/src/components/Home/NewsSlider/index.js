@@ -6,18 +6,29 @@ import history from "../../Routers/history";
 
 const slides = [
   {
-    title: "Edison Cavani on his way out.",
+    title: "Edison Cavani Contract.",
     description:
-      "The Uraguayian super star is at the end of his PSG contract and is now up for grabs.",
+      "The Uraguayian super star is at the end of his PSG contract...",
+    logoImage:
+      "https://lh3.googleusercontent.com/proxy/tS3TlY6RYG_lCskU9Am3wom_4noVDMFWYZpJGzbAos4gMZ_B4WJqdFptRdK5yk6B21Ca0D9DV1gpYBtguOOgn0O66_8km_FjV4-cdh8ajLsuOMqbwVuByGnyjLlOeKfYEw",
     image:
       "https://img.bleacherreport.net/img/images/photos/003/848/415/hi-res-721f6cc92cc4dd87fb17cc3476e04a6a_crop_north.jpg?1579614823&w=3072&h=2048",
   },
   {
-    title:
-      "Carlos Vela, starting off another season in the MLS with a wonder goal!",
+    title: "MLS Start on fire!",
     description:
-      "Carlos Vela, coming off a history season in the 2019 campaign, shows no stop of slowing down for the 2020 season. With 35 goals in 30 goals, Carlos Vela comes into the new season with no signs of form loss.",
+      "Carlos Vela, starting off another season in the MLS with a wonder goal!",
+    logoImage:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/MLS_crest_logo_RGB_gradient.svg/1200px-MLS_crest_logo_RGB_gradient.svg.png",
     image: "https://goolfm.net/wp-content/uploads/2020/03/Carlos-Vela.jpg",
+  },
+  {
+    title: "Local Football",
+    description: "Lucchese on top of the table, look to return to Serie C",
+    logoImage:
+      "https://upload.wikimedia.org/wikipedia/it/0/02/Lucchesestemma.png",
+    image:
+      "https://www.ivg.it/photogallery_new/images/2014/11/lucchese-258543.660x368.jpg",
   },
 ];
 
@@ -38,10 +49,57 @@ const NewsSlider = () => {
             }}
             onClick={() => history.push("/login")}
           >
-            <div style={{ backgroundColor: "rgba(75,171,232)", float: "left" }}>
-              <h2 style={{ color: "white" }}>{slide.title}</h2>
+            {/*Container with Title, Image, And Description*/}
+            <div
+              style={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+
+                flexDirection: "column",
+              }}
+            >
+              {/*Title Container */}
+              <div
+                style={{
+                  backgroundColor: "rgba(75,171,232)",
+                  display: "inline-block",
+                }}
+              >
+                <h2
+                  style={{
+                    color: "white",
+                    margin: "5px",
+                    fontSize: "20px",
+                  }}
+                >
+                  {slide.title.toLocaleUpperCase()}
+                </h2>
+              </div>
+
+              {/*Image and Description Container */}
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                }}
+              >
+                <img
+                  alt=""
+                  style={{ width: "100px", height: "100px", margin: "7px" }}
+                  src={slide.logoImage}
+                ></img>
+                <div
+                  style={{
+                    color: "white",
+                  }}
+                >
+                  <h2 style={{ font: "bold", margin: "5px" }}>
+                    {slide.description}
+                  </h2>
+                </div>
+              </div>
             </div>
-            <div style={{ color: "white" }}>{slide.description}</div>
           </div>
         ))}
       </Slider>
