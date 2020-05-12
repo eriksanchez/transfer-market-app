@@ -10,7 +10,7 @@ const slides = [
     description:
       "The Uraguayian super star is at the end of his PSG contract...",
     logoImage:
-      "https://lh3.googleusercontent.com/proxy/tS3TlY6RYG_lCskU9Am3wom_4noVDMFWYZpJGzbAos4gMZ_B4WJqdFptRdK5yk6B21Ca0D9DV1gpYBtguOOgn0O66_8km_FjV4-cdh8ajLsuOMqbwVuByGnyjLlOeKfYEw",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Uruguay_national_football_team_seal.svg/1200px-Uruguay_national_football_team_seal.svg.png",
     image:
       "https://img.bleacherreport.net/img/images/photos/003/848/415/hi-res-721f6cc92cc4dd87fb17cc3476e04a6a_crop_north.jpg?1579614823&w=3072&h=2048",
   },
@@ -29,6 +29,14 @@ const slides = [
       "https://upload.wikimedia.org/wikipedia/it/0/02/Lucchesestemma.png",
     image:
       "https://www.ivg.it/photogallery_new/images/2014/11/lucchese-258543.660x368.jpg",
+  },
+  {
+    title: "Houston FC on the rise!",
+    description:
+      "Talbot's 2020 roster has been stacked up and ready to take the UPSL central conference by storm...",
+    logoImage:
+      "https://m-tv.imgix.net/0d818d2219dc60fd551b05b8f147dbfd3bb252d4d258f1901d14a55d44e72d22.png",
+    image: "https://pbs.twimg.com/media/DqoXtLHXcAAtYBy.jpg",
   },
 ];
 
@@ -86,7 +94,7 @@ const NewsSlider = () => {
               >
                 <img
                   alt=""
-                  style={{ width: "100px", height: "100px", margin: "7px" }}
+                  style={{ width: "100px", height: "100px", margin: "70px" }}
                   src={slide.logoImage}
                 ></img>
                 <div
