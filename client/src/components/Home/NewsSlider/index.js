@@ -48,7 +48,7 @@ const NewsSlider = () => {
         marginLeft: "10px",
       }}
     >
-      <Slider>
+      <Slider autoplay="6000" color="white">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -63,7 +63,6 @@ const NewsSlider = () => {
                 position: "absolute",
                 bottom: 0,
                 left: 0,
-
                 flexDirection: "column",
               }}
             >
@@ -90,11 +89,12 @@ const NewsSlider = () => {
                 style={{
                   display: "flex",
                   flexDirection: "row",
+                  backgroundColor: "rgba(31,49,79,0.5)",
                 }}
               >
                 <img
                   alt=""
-                  style={{ width: "100px", height: "100px", margin: "70px" }}
+                  style={{ width: "100px", height: "100px", margin: "10px" }}
                   src={slide.logoImage}
                 ></img>
                 <div

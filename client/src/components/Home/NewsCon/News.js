@@ -3,7 +3,7 @@ import React from "react";
 const News = (props) => {
   return (
     <div>
-      <image src={props.image}></image>
+      <img alt="" src={props.image}></img>
       This is a News component
     </div>
   );
