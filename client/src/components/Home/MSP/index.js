@@ -16,11 +16,12 @@ const MSP = () => {
             color: "white",
           }}
         >
-          MOST VIEWED PLAYER
+          <h5 style={{ padding: "5px" }}>MOST VIEWED PLAYER</h5>
         </div>
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div>
             <img
+              style={{ margin: "5px" }}
               height="200px"
               width="200px"
               alt=""
@@ -28,8 +29,18 @@ const MSP = () => {
             />
           </div>
           <div>
-            <h2>Martin Bastos</h2>
-            <h5>Market Value: $250,000</h5>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <h2 style={{ color: "rgba(59,118,160)" }}>Martin Bastos</h2>
+              <img
+                style={{ height: "30px", width: "30px", margin: "5px" }}
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/1280px-Flag_of_Uruguay.svg.png"
+              />
+            </div>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <h5>
+                Market Value: <h6>$250,000</h6>
+              </h5>
+            </div>
             <div
               style={{
                 display: "flex",
