@@ -6,6 +6,8 @@ const MSP = () => {
       <div
         style={{
           marginLeft: "10px",
+          border: "1px solid ",
+          padding: "5px",
         }}
       >
         <div
