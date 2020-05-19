@@ -36,7 +36,9 @@ const MSP = () => {
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/1280px-Flag_of_Uruguay.svg.png"
               />
             </div>
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div
+              style={{ display: "flex", flexDirection: "column", color: "red" }}
+            >
               <h5>
                 Market Value: <h6>$250,000</h6>
               </h5>
