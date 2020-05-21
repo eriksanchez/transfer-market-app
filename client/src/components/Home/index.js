@@ -11,7 +11,7 @@ const Home = () => {
         <NewsSlider />
         <MSP />
       </div>
-      <div>
+      <div style={{ backgroundColor: "rgba(255,255,255)" }}>
         <NewsCon />
       </div>
     </div>

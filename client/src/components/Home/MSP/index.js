@@ -22,8 +22,8 @@ const MSP = () => {
           <div>
             <img
               style={{ margin: "5px" }}
-              height="200px"
-              width="200px"
+              height="150px"
+              width="150px"
               alt=""
               src="https://www.toscanagol.it/immagini/TO_immagini/foto/big/019064castelnuovo.jpg"
             />
@@ -32,17 +32,25 @@ const MSP = () => {
           <div>
             <div style={{ display: "flex", flexDirection: "row" }}>
               <h5 style={{ color: "rgba(59,118,160)" }}>Martin Bastos</h5>
+
               <img
-                style={{ height: "25px", width: "25px", margin: "5px" }}
+                alt=""
+                style={{ height: "15px", width: "20px", margin: "5px" }}
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/1280px-Flag_of_Uruguay.svg.png"
               />
+              <div
+                style={{
+                  backgroundColor: "rgba(242,242,242)",
+                  marginLeft: "90px",
+                }}
+              >
+                <h6 style={{ margin: "5px" }}>#1</h6>
+              </div>
             </div>
             <div style={{ display: "flex", flexDirection: "row" }}>
               Market Value:
               <h6 style={{ marginLeft: "5px", marginTop: "2px" }}>$250,000</h6>
             </div>
-
-            <div> #1</div>
 
             <div
               style={{
