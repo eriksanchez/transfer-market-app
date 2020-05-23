@@ -11,14 +11,19 @@ const News = (props) => {
         marginLeft: "10px",
       }}
     >
-      <div style={{ backgroundColor: "rgba(228,228,228)" }}>
-        22.05.2020 - 22:03
-      </div>
-      <div>
+      <div style={{ backgroundColor: "rgba(228,228,228)" }}></div>
+      <div
+        styl={{
+          display: "flex",
+          flexDirection: "row",
+          backgroundColor: "blue",
+        }}
+      >
         <img
           alt=""
           src="https://tmssl.akamaized.net/images/portrait/medium/517894-1532351797.jpg?lm=1532351893"
         />
+        <h6>22.05.2020 - 22:03</h6>
         <h6 style={{ color: "rgba(74,171,231)" }}>
           First derby at Olympiastadion
         </h6>
