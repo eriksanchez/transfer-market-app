@@ -6,16 +6,17 @@ const News = (props) => {
       style={{
         marginTop: "10px",
         backgroundColor: "red",
-        height: "50px",
-        width: "50%",
+        width: "60%",
         marginLeft: "10px",
       }}
     >
-      <div style={{ backgroundColor: "rgba(228,228,228)" }}></div>
+      <div style={{ backgroundColor: "rgba(228,228,228)" }}>
+        24.05.2020 - 20:02
+      </div>
       <div
         styl={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: "column",
           backgroundColor: "blue",
         }}
       >
@@ -23,10 +24,9 @@ const News = (props) => {
           alt=""
           src="https://tmssl.akamaized.net/images/portrait/medium/517894-1532351797.jpg?lm=1532351893"
         />
-        <h6>22.05.2020 - 22:03</h6>
-        <h6 style={{ color: "rgba(74,171,231)" }}>
-          First derby at Olympiastadion
-        </h6>
+        <div>
+          <h6>First derby at Olympiastadion</h6>
+        </div>
       </div>
     </div>
   );
