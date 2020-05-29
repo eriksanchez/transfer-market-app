@@ -13,6 +13,7 @@ const Home = () => {
       </div>
       <div style={{ backgroundColor: "rgba(255,255,255)" }}>
         <NewsCon />
+        <NewsCon />
       </div>
     </div>
   );

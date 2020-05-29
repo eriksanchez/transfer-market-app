@@ -54,12 +54,20 @@ const News = (props) => {
             Kanya Fujimoto nears Portugal move - 20-year-old became regular this
             season
           </h3>
-          <h6 style={{ display: "inline-block", marginLeft: "15%" }}>
+          <p
+            style={{
+              display: "inline-block",
+              marginLeft: "15%",
+              maxHeight: "50px",
+              position: "relative",
+              overflow: "hidden",
+            }}
+          >
             Borussia Dortmund, Milan, Napoli, and per buyback option Chelsea?
             The list of teams keeping an eye on Jeremie Boga is long. The US
             Sassuolo winger was one of the{" "}
             <h4 style={{ display: "inline-block" }}>Read More...</h4>
-          </h6>
+          </p>
         </div>
       </div>
     </div>
