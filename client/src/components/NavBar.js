@@ -20,7 +20,7 @@ const NavBar = (props) => {
       <Navbar color="dark" dark expand="sm" className="mb-5">
         <Container>
           <NavbarBrand href="/">News</NavbarBrand>
-          <NavbarBrand>Competitions</NavbarBrand>
+          <NavbarBrand href="/Competitions">Competitions</NavbarBrand>
           <NavbarBrand href="/Login">Login</NavbarBrand>
 
           <NavbarToggler onClick={toggle} />
