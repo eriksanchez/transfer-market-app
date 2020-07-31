@@ -11,7 +11,7 @@ const CompSearch = () => {
         class="bi bi-house-fill"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
-        style={{ marginRight: "20px", marginLeft: "10px" }}
+        style={{ marginRight: "20px", marginLeft: "15px" }}
       >
         <path
           fill-rule="evenodd"
